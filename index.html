@@ -722,12 +722,12 @@
 
 		<script>
 			$(document).ready(function () {
-				var visited = $.cookie('wapo'); // visited = 0
+				var visited = $.cookie('wapo'); 
 				if (visited >= 1) {
 					console.log("I see you bro!");
 				} else {
 					console.log("New visitor");
-					visited++; // increase counter of visits
+					visited = 1; // increase counter of visits
 					// set new cookie value to match visits
 					$.cookie( 'wapo', visited );
 				}
