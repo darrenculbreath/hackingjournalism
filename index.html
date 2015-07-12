@@ -26,10 +26,11 @@
 		{
 		    var url = document.createElement('a');
 		    url.href = document.referrer;
-		    alert('Refer = ' + url.hostname);
+		  
 
 		    if (document.referrer.indexOf('t.co') >= 0) 
 		    {
+		    	  alert('Refer = ' + url.hostname);
 		    	document.getElementById("twittershare").style.display = "block";
 		    }
 		    return url.hostname;
