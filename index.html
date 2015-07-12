@@ -40,7 +40,7 @@
 				max-width: 800px !important;
 			}
 			div#cBVVj22enlfjhp {width: 100%;}
-			.pb-f-sharebars-top-share-bar .top-sharebar-wrapper.color-top .social-tools-wrapper .tool.twitter {
+			.pb-f-sharebars-top-share-bar .top-sharebar-wrapper.color-top .social-tools-wrapper .tool {
 				display: block;
 				width: 100%;
 			}
@@ -70,8 +70,8 @@
 					url.href = document.referrer;
 					if (document.referrer.indexOf('t.co') >= 0) {
 						document.getElementById("twittershare").style.display = "block";
-					} else if (document.referrer.indexOf('t.co') >= 0) {
-						document.getElementById("facebooshare").style.display = "block";
+					} else if (document.referrer.indexOf('facebook.com') >= 0) {
+						document.getElementById("facebookshare").style.display = "block";
 					}
 				}
 		</script>
@@ -722,7 +722,6 @@
 
 		<script>
 			$(document).ready(function () {
-				// create cookie
 				var visited = $.cookie('wapo'); // visited = 0
 				if (visited >= 1) {
 					console.log("I see you bro!");
@@ -730,10 +729,7 @@
 					console.log("New visitor");
 					visited++; // increase counter of visits
 					// set new cookie value to match visits
-					$.cookie('wapo', visited, {
-						expires: 1 // expires after one day
-					});
-					return false;
+					$.cookie( 'wapo', visited );
 				}
 			});
 		</script>
