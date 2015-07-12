@@ -58,17 +58,14 @@
 		</script>
 
 		<script>
-				// Get Domain 
-				function getReferrerDomain() {
+				function handleReferrerDomain() {
 					var url = document.createElement('a');
 					url.href = document.referrer;
-					// alert('>> ' + url.hostname);
-
 					if (document.referrer.indexOf('t.co') >= 0) {
-						alert('Success = ' + url.hostname);
 						document.getElementById("twittershare").style.display = "block";
+					} else if (document.referrer.indexOf('t.co') >= 0) {
+						document.getElementById("facebooshare").style.display = "block";
 					}
-					//return url.hostname;
 				}
 		</script>
 
@@ -273,7 +270,7 @@
 
 </head>
 
-<body onload="getReferrerDomain()" class="pb-theme-normal pb-full-fluid">
+<body onload="handleReferrerDomain()" class="pb-theme-normal pb-full-fluid">
 
 <script type="text/javascript" src="//js.washingtonpost.com/wp-stat/otto/js/mbox.js"></script>
 
@@ -444,7 +441,7 @@
 									<div class="email tool  desktop mobile"><span class="hideText">Share via Email</span><span class="fa fa-envelope"></span></div>
 								</a>
 
-								<a onclick="return false;">
+								<a style="display:none;" onclick="return false;">
 									<div class="more tool  desktop"><span class="hideText" tabindex=_tbidx_>More Options</span><span class="fa fa-plus"> </span></div>
 								</a>
 
@@ -643,576 +640,106 @@
 		   
 			<div>
 					
-				</div>
+			</div>
+			<div class="moat-trackable pb-f-theme-normal pb-3 pb-feature pb-layout-item pb-f-article-next-story" moat-id="article/next-story|national/health-science" id="f1QWlH1enlfjhp">
+				<div class="next-story-wrapper">
+					<div class="next-story has-bg-photo"><div class="kicker">Next Story</div><div class="heading heading2"><a href="http://www.washingtonpost.com/news/speaking-of-science/wp/2015/07/11/struggling-to-save-black-rhinos-scientists-are-crowdfunding-to-preserve-their-dna/">Struggling to save black rhinos, scientists are crowdfunding to preserve their DNA</a></div><div class="sigline"><span class="author">Robert Gebelhoff</span> &middot; <span class="date">8 hours ago</span></div></div><!-- /next-story -->
+					<a href="http://www.washingtonpost.com/news/speaking-of-science/wp/2015/07/11/struggling-to-save-black-rhinos-scientists-are-crowdfunding-to-preserve-their-dna/"><span id="next-story-bg" class="next-story-bg" style="background:url('https://img.washingtonpost.com/blogs/wp-content/themes/wapo-blogs-v2/imrs.php?w=250&h=250&src=https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/07/Ntombi-R-Prehn.jpg') no-repeat center top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></span></a><!-- /next-story-bg -->
+				</div><!-- /next-story-wrapper -->
+				<script type="text/javascript">
+					(function($){
+						TWP = window.TWP||{};
+						TWP.Features = TWP.Features||{};
+						TWP.Features.Article = TWP.Features.Article||{};
+						TWP.Features.Article.NextStory = TWP.Features.Article.NextStory||{};
+						TWP.Features.Article.NextStory.tnUrl='https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/07/Ntombi-R-Prehn.jpg';
+					})(jQuery);
+				</script>
+			</div>
 			
-		
-	
-	
-
-
-
-
-
-
-	
-		
-			
-		 
-		
-	
-	
-
-
-<div class="moat-trackable pb-f-theme-normal pb-3 pb-feature pb-layout-item pb-f-article-next-story" moat-id="article/next-story|national/health-science" id="f1QWlH1enlfjhp">
-  
-
-
-
-
-
-
-
-
-
-
-
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-
-
-
-
-
-
-	
-		
-		
-	
-
-	
-		
-	
-
-	
-
-	
-
-	
-		
-			
-			
-			
-		
-	
-
-	
-	
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-			
-			
-			
-				
-				
-			
-			
-		
-
-		
-			
-		
-		
-	
-	
-
-	
-		
-	
-
-
-
-
-	
-		<div class="next-story-wrapper">
-			<div class="next-story has-bg-photo"><div class="kicker">Next Story</div><div class="heading heading2"><a href="http://www.washingtonpost.com/news/speaking-of-science/wp/2015/07/11/struggling-to-save-black-rhinos-scientists-are-crowdfunding-to-preserve-their-dna/">Struggling to save black rhinos, scientists are crowdfunding to preserve their DNA</a></div><div class="sigline"><span class="author">Robert Gebelhoff</span> &middot; <span class="date">8 hours ago</span></div></div><!-- /next-story -->
-			<a href="http://www.washingtonpost.com/news/speaking-of-science/wp/2015/07/11/struggling-to-save-black-rhinos-scientists-are-crowdfunding-to-preserve-their-dna/"><span id="next-story-bg" class="next-story-bg" style="background:url('https://img.washingtonpost.com/blogs/wp-content/themes/wapo-blogs-v2/imrs.php?w=250&h=250&src=https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/07/Ntombi-R-Prehn.jpg') no-repeat center top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></span></a><!-- /next-story-bg -->
-		</div><!-- /next-story-wrapper -->
-		
-			<script type="text/javascript">
-				(function($){
-					TWP = window.TWP||{};
-					TWP.Features = TWP.Features||{};
-					TWP.Features.Article = TWP.Features.Article||{};
-					TWP.Features.Article.NextStory = TWP.Features.Article.NextStory||{};
-					TWP.Features.Article.NextStory.tnUrl='https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/07/Ntombi-R-Prehn.jpg';
-				})(jQuery);
-			</script>
-		
-	
-	
-
+			<div class="moat-trackable pb-f-theme-normal pb-3 pb-feature pb-layout-item pb-f-page-subscription" moat-id="page/subscription|national/health-science" id="fzMZnM1enlfjhp">
  
-</div>
-<div class="moat-trackable pb-f-theme-normal pb-3 pb-feature pb-layout-item pb-f-ad-leaderboard-2" moat-id="ad/leaderboard-2|national/health-science" id="fusabt1enlfjhp">
-  
 
-
-
-
-	
-
-
-	
-	
-		<div id="slug_leaderboard_bottom" data-ad-type="leaderboard_bottom" class="pb-ad-container leaderboard-2" style="display:none;">
-			
+			</div>
 		</div>
-		<div class="mobile-leaderboard ad-hideable">
-			<div id="slug_mob_av" data-ad-type="mob_av" style="display:none;"></div>
-		</div>
-	
+		<script src="//js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" async data-ad-page-type="responsive" data-ad-site="wp"></script> 
+		<script src="/pb/resources/js/jqModal.js?_=78619&_minify=false"></script>
+		<script src="/pb/resources/js/jquery.ui.core.js?_=78619&_minify=false"></script>
+		<script src="/pb/resources/js/inline-content.js?_=78619&_minify=false"></script>
+		<script src="/pb/resources/js/jquery.ui.widget.js?_=78619&_minify=false"></script>
+		<script src="/pb/resources/js/jquery.ui.rcarousel.js?_=78619&_minify=false"></script>
+		<script src="//wp-stat.s3.amazonaws.com/visitorsegment/shared/resources/build/latest.js"></script>
+		<script src="/pb/resources/js/plugins/plugin.jquery.getUrlParam-2.1.0.js?_=78619&_minify=false"></script>
+		<script src="/pb/resources/contentfeed/build/postrecommends/contentfeed.js?_=78619&_minify=false"></script>
+		<script src="/pb/gr/p/default/rrBz9P1enlfjhp/render.js?_=6cbc6&_minify=false"></script>
+		<script src="/pb/gr/p/default/rrBz9P1enlfjhp/instance.js?_=6cbc6&_minify=false"></script>
+		<script type="text/javascript">
+			window.TWPHead.ready("main.js", function() {
+				window.TWP && TWP.Analytics && TWP.Analytics.init( "production" == 'production' ? '' : {suite:'preproduction'} );
+			})
+		</script>
+		<noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=3005617&cv=2.0&cj=1" /></noscript>
 
-
-	
-	
-
- 
-</div>
-<div class="moat-trackable pb-f-theme-normal pb-1 pb-feature pb-layout-item pb-f-page-targeting" moat-id="page/targeting|national/health-science" id="fjQ1Pe2enlfjhp">
-  
-
-
-
-
-
-
-	
-	
-		
-	
-
-
-<script type="text/javascript">
-  (function($){
-	TWP = window.TWP||{};
-	TWP.Features = TWP.Features||{};
-	TWP.Features.Page = TWP.Features.Page||{};
-	TWP.Features.Page.Targeting = {};
-	//TWP.Features.Page.Targeting.endpointServer="https://targeting.wpdigital.net/TargetingWebAPP/targeting";
-	TWP.Features.Page.Targeting.endpointServer="https://targeting.wpdigital.net/TargetingWebAPP/targeting";
-  })(jQuery);
-</script>
- 
-</div>
-<div class="moat-trackable pb-f-theme-normal pb-3 pb-feature pb-layout-item pb-f-page-subscription" moat-id="page/subscription|national/health-science" id="fzMZnM1enlfjhp">
-  
-
-
-
-	
-		
-	
-	
-
-
-
-	
-
-
-
-
-<!-- Set default subscriptionType -->
-
-
-
-	
-
-
-<!-- Subscription Banner Content -->
-<div id="subscription-banner" class="banner" style="display: none;">
-	<div class="wp-logo">
-		<a href="//www.washingtonpost.com?nid=top_pb_wplogo">The Washington Post</a>
-	</div>
-	<div class="banner-content">
-		<div class="subscribe-title">
-			<p class="subscribe-headline">Every story. Every feature. Every insight.</p>
-			<p class="subscribe-tagline">Yours for as low as JUST 99¢!</p>
-		</div>
-		
-			
-			
-				<a href="https://subscribe.washingtonpost.com/acquisition/?promo=dgoutbrainbanner&view=1&wpsrc=CM0000373&ttexclude=1&hl=hl2N99" id="subscribe-btn" class="submit-btn subscribe"> Subscribe </a>
-			
-		
-
-		<span class="not-now-btn subscribe">
-			<p class="label">Not Now</p>
-			<a class="link"><i class="fa fa-times"></i></a>
-		</span>
-	</div>
-</div>
-
-<!-- Newsletter Subscribe Banner Content -->
-<div id="signup-banner" class="banner" style="display: none;">
-
-	<div class="hidden-data">
-		<p id="newsletter-banner-section">national/health-science</p>
-	  <p id="newsletter-banner-subsection"></p>
-	  <p id="newsletter-banner-blogname">speaking-of-science</p>
-	</div>
-	
-	<div class="wp-logo">
-		<a href="//www.washingtonpost.com?nid=top_pb_wplogo">The Washington Post</a>
-	</div>
-	<div class="banner-content">
-		
-		<div class="signup-title">
-			<p class="signup-headline" id="newsletter-headline-banner">
-				<i class="fa fa-check confirmation"></i>
-			</p> 
-			<p class="signup-tagline" id="newsletter-tagline-banner"></p>
-			<p class = "title confirmation subscribed-confirmation"><span>Success!</span> Check your inbox for details.</p>
-			<p class="title confirmation all-newsletters">
-				<a href="https://subscribe.washingtonpost.com/newsletters">See all newsletters</a>
-			</p>
-		</div>
-
-			<form id="signup-form">
-				<input type="text" name="email" class="signup-field" placeholder="E-mail address" id="newsLetter-input-banner"/>
-				<input type="submit" value="Add" class = "submit-btn signup" id="signup-newsLetter"/>
-				<p class="newsLetter-error-msg-banner">Incorrect email</p>
-			</form>
-			
-			<input type="submit" value="Sign me up" id="signed-up-loggedIn-btn">
-		
-			<span class="not-now-btn subscribe">
-				<p class="label">Not Now</p>
-			<a class="link"><i class="fa fa-times"></i></a>
-			</span>
-	</div>
-</div>
- 
-</div>
-
-<div class="moat-trackable pb-f-theme-normal pb-0 pb-feature pb-layout-item pb-f-bi-abtest" moat-id="bi/abtest|national/health-science" id="f2yUA22enlfjhp">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-<script>
-var TWP = window.TWP || {};
-;(function(w, usrValue, undefined){
-	var usr = w.TWP.ABTestUser = usrValue;
-	w._abtemptyfn = function() { return undefined; };
-})(window, {
-	trackPageviewEventBefore: 'onTwpMeterComplete.omniture' || 'abtest-noevent',
-	trackPageviewEventAfter: 'afterTwpPageTrack.omniture' || 'abtest-noevent',
-	trackSetHandler: 'TWP.ABTestMfr.track.omniture.trackSetHandler' || '_abtemptyfn',
-	trackUnsetHandler: 'TWP.ABTestMfr.track.omniture.trackUnsetHandler' || '_abtemptyfn',
-	trackSendHandler: 's.sendDataToOmniture' || '_abtemptyfn',
-	trackValueDelimeter: ',' || ','
-});
-</script>
-
-
-<script>
-TWP.ABTestBucket = TWP.ABTestBucket || [];
-
-	
-		
-			
-				
-					
-TWP.ABTestBucket.push({"name":"recommendation","disabled":false,"features":[{"name":"recommendation-video","active":true,"x-status":"1","increment":4,"end":"1438488000000","segment":{"mobile":false,"desktop":false,"touch":false},"_token":"af4014","variations":[{"customOptions":{"target":"50"},"name":"video","track":[{"name":"list1","dynamic":false,"value":"recommendation-video:video"},{"name":"prop56","dynamic":false,"value":"recommendation-video:video"},{"name":"list1","dynamic":false,"value":"recommendation-video-af4014"},{"name":"prop56","dynamic":false,"value":"recommendation-video-af4014"}]}],"defaultTrack":[{"name":"list1","dynamic":false,"value":"recommendation-video:default"},{"name":"prop56","dynamic":false,"value":"recommendation-video:default"},{"name":"list1","dynamic":false,"value":"recommendation-video-af4014"},{"name":"prop56","dynamic":false,"value":"recommendation-video-af4014"}]},{"name":"recommendation-uk","active":true,"x-status":"1","increment":2,"end":"1439006400000","segment":{"mobile":false,"desktop":false,"touch":false},"_token":"4f29f5","variations":[{"customOptions":{"target":"50"},"name":"uk","track":[{"name":"list1","dynamic":false,"value":"recommendation-uk:uk"},{"name":"prop56","dynamic":false,"value":"recommendation-uk:uk"},{"name":"list1","dynamic":false,"value":"recommendation-uk-4f29f5"},{"name":"prop56","dynamic":false,"value":"recommendation-uk-4f29f5"}]}],"defaultTrack":[{"name":"list1","dynamic":false,"value":"recommendation-uk:default"},{"name":"prop56","dynamic":false,"value":"recommendation-uk:default"},{"name":"list1","dynamic":false,"value":"recommendation-uk-4f29f5"},{"name":"prop56","dynamic":false,"value":"recommendation-uk-4f29f5"}]}]});
-				
-			
-		
-			
-				
-					
-TWP.ABTestBucket.push({"name":"dummy","disabled":false,"features":[{"name":"dummy-feature","active":true,"reglock":false,"end":"1418965200000","throttle":3.3333333333333335,"_token":"14376b","defaultTrack":[{"name":"list1","dynamic":false,"value":"dummy-feature:default"},{"name":"list1","dynamic":false,"value":"dummy-feature-14376b"}],"variations":[{"customOptions":{"target":"20"},"name":"easy1","track":[{"name":"list1","dynamic":false,"value":"dummy-feature:easy1"},{"name":"list1","dynamic":false,"value":"dummy-feature-14376b"}]},{"customOptions":{"target":"10"},"name":"easy2","track":[{"name":"list1","dynamic":false,"value":"dummy-feature:easy2"},{"name":"list1","dynamic":false,"value":"dummy-feature-14376b"}]}]}]});
-				
-			
-		
-			
-				
-					
-TWP.ABTestBucket.push({"name":"header","disabled":false,"features":[{"name":"header-mastHead2","active":false,"increment":0,"end":"1416805200000","_token":"c15b6c","blacklist":{"referrers":["","washingtonpost.com"],"track":[{"name":"list1","dynamic":false,"value":"header-mastHead2:direct"}]},"defaultTrack":[{"name":"list1","dynamic":false,"value":"header-mastHead2:default"},{"name":"list1","dynamic":false,"value":"header-mastHead2-c15b6c"}],"variations":[{"customOptions":{"target":"5"},"name":"logoLarge","track":[{"name":"list1","dynamic":false,"value":"header-mastHead2:logoLarge"},{"name":"list1","dynamic":false,"value":"header-mastHead2-c15b6c"}]}]},{"name":"header-leaderboard","active":false,"increment":0,"end":"1423630800000","_token":"1f6567","defaultTrack":[{"name":"list1","dynamic":false,"value":"header-leaderboard:default"},{"name":"list1","dynamic":false,"value":"header-leaderboard-1f6567"}],"variations":[{"customOptions":{"target":"20"},"name":"below_sharebar","track":[{"name":"list1","dynamic":false,"value":"header-leaderboard:below_sharebar"},{"name":"list1","dynamic":false,"value":"header-leaderboard-1f6567"}]}]}]});
-				
-			
-		
-			
-				
-					
-TWP.ABTestBucket.push({"name":"subscription","disabled":false,"features":[{"name":"subscription-fronts","active":true,"x-status":"1","increment":1,"end":"1436932800000","segment":{"mobile":true,"desktop":true,"touch":true},"_token":"3bb994","variations":[{"customOptions":{"target":"33"},"name":"instream","track":[{"name":"list1","dynamic":false,"value":"subscription-fronts:instream"},{"name":"prop56","dynamic":false,"value":"subscription-fronts:instream"},{"name":"list1","dynamic":false,"value":"subscription-fronts-3bb994"},{"name":"prop56","dynamic":false,"value":"subscription-fronts-3bb994"}]},{"customOptions":{"target":"33"},"name":"both","track":[{"name":"list1","dynamic":false,"value":"subscription-fronts:both"},{"name":"prop56","dynamic":false,"value":"subscription-fronts:both"},{"name":"list1","dynamic":false,"value":"subscription-fronts-3bb994"},{"name":"prop56","dynamic":false,"value":"subscription-fronts-3bb994"}]}],"defaultTrack":[{"name":"list1","dynamic":false,"value":"subscription-fronts:default"},{"name":"prop56","dynamic":false,"value":"subscription-fronts:default"},{"name":"list1","dynamic":false,"value":"subscription-fronts-3bb994"},{"name":"prop56","dynamic":false,"value":"subscription-fronts-3bb994"}]}]});
-				
-			
-		
-			
-				
-					
-TWP.ABTestBucket.push({"name":"newsletters","disabled":false,"features":[{"name":"newsletters-articleUnits","active":true,"x-status":"1","increment":0,"end":"1437710400000","segment":{"mobile":false,"desktop":true,"touch":false},"_token":"e0dd6a","variations":[{"customOptions":{"target":"33"},"name":"banner","track":[{"name":"list1","dynamic":false,"value":"newsletters-articleUnits:banner"},{"name":"prop56","dynamic":false,"value":"newsletters-articleUnits:banner"},{"name":"list1","dynamic":false,"value":"newsletters-articleUnits-e0dd6a"},{"name":"prop56","dynamic":false,"value":"newsletters-articleUnits-e0dd6a"}]},{"customOptions":{"target":"33"},"name":"bottom","track":[{"name":"list1","dynamic":false,"value":"newsletters-articleUnits:bottom"},{"name":"prop56","dynamic":false,"value":"newsletters-articleUnits:bottom"},{"name":"list1","dynamic":false,"value":"newsletters-articleUnits-e0dd6a"},{"name":"prop56","dynamic":false,"value":"newsletters-articleUnits-e0dd6a"}]}],"defaultTrack":[{"name":"list1","dynamic":false,"value":"newsletters-articleUnits:default"},{"name":"prop56","dynamic":false,"value":"newsletters-articleUnits:default"},{"name":"list1","dynamic":false,"value":"newsletters-articleUnits-e0dd6a"},{"name":"prop56","dynamic":false,"value":"newsletters-articleUnits-e0dd6a"}]},{"name":"newsletters-bannerReturnTime","active":true,"x-status":"1","increment":0,"end":"1434427200000","segment":{"mobile":false,"desktop":true,"touch":false},"_token":"b6cf37","variations":[{"customOptions":{"target":"50"},"name":"shorter","track":[{"name":"list1","dynamic":false,"value":"newsletters-bannerReturnTime:shorter"},{"name":"prop56","dynamic":false,"value":"newsletters-bannerReturnTime:shorter"},{"name":"list1","dynamic":false,"value":"newsletters-bannerReturnTime-b6cf37"},{"name":"prop56","dynamic":false,"value":"newsletters-bannerReturnTime-b6cf37"}]}],"defaultTrack":[{"name":"list1","dynamic":false,"value":"newsletters-bannerReturnTime:default"},{"name":"prop56","dynamic":false,"value":"newsletters-bannerReturnTime:default"},{"name":"list1","dynamic":false,"value":"newsletters-bannerReturnTime-b6cf37"},{"name":"prop56","dynamic":false,"value":"newsletters-bannerReturnTime-b6cf37"}]}]});
-				
-			
-		
-	
-
-</script>
-
-
-	<script>
-;(function ABTestMfrAnonymous($, TWP, window, undefined) {
-	var user = TWP.ABTestUser;
-	var ABTM = {};
-	var trk = ABTM.track = {};
-
-	var omni = trk.omniture = {
-		trackSetHandler: function(props) {
-
-			if (!!window.s) {
-
-				var pn;
-				for (pn in props) {
-					if (props.hasOwnProperty(pn)) {
-
-						s[pn] = ( s[pn] ? [ s[pn], props[pn] ] : [ props[pn] ] ).join( user.trackValueDelimeter );
-
-						if ( /evar/gi.test(pn) ) {
-							window['wp_' + pn.toLowerCase()] = props[pn];
+		<noscript><img src="//me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;" /></noscript>
+		<script type="text/javascript" src="//widget.perfectmarket.com/wwwwashingtonpost/load.js" ></script>
+		<script type="text/javascript">
+		(function($){
+			try{
+				// START: handle tweet buttons rendered by article-article-body
+				var $tweetAuthors = $('.tweet-authors');
+				if(
+					(!!$tweetAuthors.size() && !window.twttr)
+				) {
+					$.ajax({
+						dataType: "script",
+						cache: true,
+						url: 'http://platform.twitter.com/widgets.js',
+						success: function (data) {
+							$tweetAuthors.find('.pb-twitter-follow.unprocessed').removeClass('unprocessed')
 						}
-					}
+					})
 				}
-			}
-		},
-		trackUnsetHandler: function(props) {
-
-			if (!!window.s) {
-
-				var pn;
-				for (pn in props) {
-					if (props.hasOwnProperty(pn)) {
-						s[pn] = ( s[pn] || '').replace( ( 'string' == typeof props[pn] ? [ props[pn] ] : props[pn] ).join( user.trackValueDelimeter ), '');
-
-						if (!s[pn]) {
-							s[pn] = undefined;
-						}
-
-						if ( /evar/gi.test(pn) ) {
-							window['wp_' + pn.toLowerCase()] = undefined;
-						}
-					}
-				}
-			}
-		},
-		trackSendHandler: function(customLinkName, events, props) {
-
-			if (!!window.s) {
-
-				var originalValues = {};
-				originalValues.events = s.events;
-				originalValues.linkTrackEvents = s.linkTrackEvents;
-
-				if (events) {
-					s.events = ( 'string' === typeof events ? [events] : events ).join( user.trackValueDelimeter ) || undefined;
-
-					s.linkTrackEvents = s.events
-				}
-
-				omni.trackSetHandler(props);
-
-				s.tl(true, 'o', customLinkName, {
-					linkTrackVars: function() {
-						var results = [];
-
-						if (events) {
-							results.push('events');
-						}
-
-						var name;
-						for (name in props) {
-							if (props.hasOwnProperty(name)) {
-								results.push(name);
-							}
-						}
-
-						return results.join( user.trackValueDelimeter );
-					}()
-				});
-
-				s.events = originalValues.events;
-				s.linkTrackEvents = originalValues.linkTrackEvents;
-
-				omni.trackUnsetHandler(props);
-			}
-		}
-	};
-
-	TWP.ABTestMfr = ABTM;
-
-})(jQuery, TWP, window);
-</script>
-
-
- 
-</div>
-<div class="moat-trackable pb-f-theme-normal pb-3 pb-feature pb-layout-item pb-f-page-magnet" moat-id="page/magnet|national/health-science" id="fxka092enlfjhp">
-  
-
-
-
-
-
-
-
-
-	
-
-	
-
-	
-
-	
-
-
- 
-</div>
-</div></div>
-
-
-
-
-	
-		
-	
-
-	
-
-	
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-	<script src="//js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" async data-ad-page-type="responsive" data-ad-site="wp"></script> 
-
-
-
-	<script src="/pb/resources/js/jqModal.js?_=78619&_minify=false"></script>
-<script src="/pb/resources/js/jquery.ui.core.js?_=78619&_minify=false"></script>
-<script src="/pb/resources/js/inline-content.js?_=78619&_minify=false"></script>
-<script src="/pb/resources/js/jquery.ui.widget.js?_=78619&_minify=false"></script>
-<script src="/pb/resources/js/jquery.ui.rcarousel.js?_=78619&_minify=false"></script>
-<script src="//wp-stat.s3.amazonaws.com/visitorsegment/shared/resources/build/latest.js"></script>
-<script src="/pb/resources/js/plugins/plugin.jquery.getUrlParam-2.1.0.js?_=78619&_minify=false"></script>
-<script src="/pb/resources/contentfeed/build/postrecommends/contentfeed.js?_=78619&_minify=false"></script>
-	<script src="/pb/gr/p/default/rrBz9P1enlfjhp/render.js?_=6cbc6&_minify=false"></script>
-	<script src="/pb/gr/p/default/rrBz9P1enlfjhp/instance.js?_=6cbc6&_minify=false"></script>
-
-	
-
-
-
-
-
-	
-	<script type="text/javascript">
-	window.TWPHead.ready("main.js", function() {
-		window.TWP && TWP.Analytics && TWP.Analytics.init( "production" == 'production' ? '' : {suite:'preproduction'} );
-	})
-	</script>
-
-
-<noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=3005617&cv=2.0&cj=1" /></noscript>
-
-<noscript><img src="//me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;" /></noscript>
-
-
-
-	<script type="text/javascript" src="//widget.perfectmarket.com/wwwwashingtonpost/load.js" ></script>
-	<script type="text/javascript">
-	(function($){
-		try{
-			// START: handle tweet buttons rendered by article-article-body
-			var $tweetAuthors = $('.tweet-authors');
-			if(
-				(!!$tweetAuthors.size() && !window.twttr)
-			) {
+				// END: handle tweet buttons rendered by article-article-body
 				$.ajax({
 					dataType: "script",
 					cache: true,
-					url: 'http://platform.twitter.com/widgets.js',
+					url: 'http://ak.sail-horizon.com/horizon/v1.js',
 					success: function (data) {
-						$tweetAuthors.find('.pb-twitter-follow.unprocessed').removeClass('unprocessed')
+						if (window.Sailthru) {
+							Sailthru.setup({ domain: 'horizon.washingtonpost.com' });
+						}
 					}
 				})
-			}
-			// END: handle tweet buttons rendered by article-article-body
-			$.ajax({
-				dataType: "script",
-				cache: true,
-				url: 'http://ak.sail-horizon.com/horizon/v1.js',
-				success: function (data) {
-					if (window.Sailthru) {
-						Sailthru.setup({ domain: 'horizon.washingtonpost.com' });
-					}
+
+			}catch(e){}
+		})(jQuery);
+		</script>
+		<!-- JS for RumDS -->
+		<script type="text/javascript">!function(){if(!(Math.floor(100*Math.random())>99)){var a,b,c,d="http://js.washingtonpost.com/wp-stat/rum/wprum.min.js",e=document.createElement("iframe");e.src="javascript:false",(e.frameElement||e).style.cssText="width: 0; height: 0; border: 0";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(e,c);try{b=e.contentWindow.document}catch(f){a=document.domain,e.src="javascript:var d=document.open();d.domain='"+a+"';void(0);",b=e.contentWindow.document}b.open()._l=function(){var b=this.createElement("script");a&&(this.domain=a),b.id="boomr-if-as",b.src=d,this.body.appendChild(b)},b.write('<body onload="document._l();">'),b.close()}}();</script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				// create cookie
+				var visited = $.cookie('visited'); // visited = 0
+				if (visited >= 3) {
+					// open fancybox after 3 secs on 4th visit or further on the same day
+					setTimeout(function () {
+						$.fancybox.open({
+							// your fancybox API options here
+						});
+					}, 3000);
+				} else {
+					visited++; // increase counter of visits
+					// set new cookie value to match visits
+					$.cookie('visited', visited, {
+						expires: 1 // expires after one day
+					});
+					return false;
 				}
-			})
-
-		}catch(e){}
-	})(jQuery);
-	</script>
-
-
-<!-- JS for RumDS -->
-<script type="text/javascript">!function(){if(!(Math.floor(100*Math.random())>99)){var a,b,c,d="http://js.washingtonpost.com/wp-stat/rum/wprum.min.js",e=document.createElement("iframe");e.src="javascript:false",(e.frameElement||e).style.cssText="width: 0; height: 0; border: 0";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(e,c);try{b=e.contentWindow.document}catch(f){a=document.domain,e.src="javascript:var d=document.open();d.domain='"+a+"';void(0);",b=e.contentWindow.document}b.open()._l=function(){var b=this.createElement("script");a&&(this.domain=a),b.id="boomr-if-as",b.src=d,this.body.appendChild(b)},b.write('<body onload="document._l();">'),b.close()}}();</script>
-
-
-
+			});
+		</script>
 	</body>
 </html>
