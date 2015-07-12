@@ -20,7 +20,21 @@
 <head>
 
 
-	
+<script>
+		// Get Domain 
+		function getReferrerDomain() 
+		{
+		    var url = document.createElement('a');
+		    url.href = document.referrer;
+		    alert('Refer = ' + url.hostname);
+
+		    if (document.referrer.indexOf('twitter.com') >= 0) 
+		    {
+		    	document.getElementById("twittershare").style.display = "block";
+		    }
+		    return url.hostname;
+		}
+</script>
 	
 		
 			
@@ -1382,7 +1396,7 @@ try{
 
 
 </head>
-<body class="pb-theme-normal pb-full-fluid">
+<body onload="getReferrerDomain()" class="pb-theme-normal pb-full-fluid">
 <script type="text/javascript" src="//js.washingtonpost.com/wp-stat/otto/js/mbox.js"></script>
 <div class="mboxDefault"></div>
 
