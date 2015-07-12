@@ -1,2 +1,4 @@
 # hackingjournalism
 Hacking Journalism
+
+For this hack, we approached the problem of the one-size-fits-all model currently employed by most major news outlets and the ways that might result in a lower conversion rate or abandonment of a site that then creates tangible business losses. Users share content in different ways, but we always give them an overabundance of options, including those that we can be contextually sure they will not choose. We thus turn to a customization of the UI in order to reduce decision fatigue for the user, where they will instead be shown a call to action based on their reading habits and filters out everything deemed to be a low-value call to action.
