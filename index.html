@@ -72,6 +72,8 @@
 					var m = $("meta[name=section]").attr("content"); 
 					if (document.referrer.indexOf('t.co') >= 0) {
 						document.getElementById("twittershare").style.display = "block";
+					} else if (document.referrer.indexOf('facebook.com') >= 0)  {
+						document.getElementById("facebookshare").style.display = "block";
 					} else if ( m == 'speaking-of-science' ) {
 						document.getElementById("emailshare").style.display = "block";
 					} else {
