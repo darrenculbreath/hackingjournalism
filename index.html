@@ -7,6 +7,7 @@
 	<meta name="keywords" content="space,  nasa,  new horizons,  pluto,  charon,  flyby,  ceres,  dawn,  rosetta,  comet,  kuiper,  kuiper belt,  solar system,  life"/>
 	<meta  itemprop="description" name="description" content="It's the end of one era of solar system exploration and the beginning of another."/>
 	<meta name="news_keywords" content="space,  nasa,  new horizons,  pluto,  charon,  flyby,  ceres,  dawn,  rosetta,  comet,  kuiper,  kuiper belt,  solar system,  life"/>
+	<meta name="section" content="speaking-of-science"/>
 	<meta name="twitter:site" value="@WashingtonPost" />
 	<meta name="twitter:card" content="summary_large_image">
 	<meta property="og:description" content="It's the end of one era of solar system exploration and the beginning of another."/>
@@ -68,8 +69,11 @@
 				function handleReferrerDomain() {
 					var url = document.createElement('a');
 					url.href = document.referrer;
+					var m = $("meta[name=section]").attr("content"); 
 					if (document.referrer.indexOf('t.co') >= 0) {
 						document.getElementById("twittershare").style.display = "block";
+					} else if ( m == 'speaking-of-science' ) {
+						document.getElementById("emailshare").style.display = "block";
 					} else {
 						document.getElementById("facebookshare").style.display = "block";
 					}
@@ -439,7 +443,7 @@
 									<div class="google-plus tool  desktop mobile"><span class="hideText">Share on Google Plus</span><span class="fa fa-google-plus"></span></div>
 								</a>
 
-								<a style="display:none;" onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'mailto:?subject=Why%20the%20July%2014%20Pluto%20flyby%20will%20be%20a%20spectacular%20event%20for%20all%20of%20us from The Washington Post&body=', 'http://www.washingtonpost.com/news/speaking-of-science/wp/2015/07/11/why-the-july-14-pluto-flyby-will-be-a-spectacular-event-for-all-of-us/', '' , null);}catch(err){
+								<a id="emailshare" style="display:none;" onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'mailto:?subject=Why%20the%20July%2014%20Pluto%20flyby%20will%20be%20a%20spectacular%20event%20for%20all%20of%20us from The Washington Post&body=', 'http://www.washingtonpost.com/news/speaking-of-science/wp/2015/07/11/why-the-july-14-pluto-flyby-will-be-a-spectacular-event-for-all-of-us/', '' , null);}catch(err){
 								window.location.href = 'mailto:?subject=Why%20the%20July%2014%20Pluto%20flyby%20will%20be%20a%20spectacular%20event%20for%20all%20of%20us from The Washington Post&body=http%3A%2F%2Fwapo.st%2F1Jb9uvP';
 								}return false;" tabindex=_tbidx_>
 									<div class="email tool  desktop mobile"><span class="hideText">Share via Email</span><span class="fa fa-envelope"></span></div>
