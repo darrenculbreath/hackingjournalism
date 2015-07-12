@@ -62,6 +62,13 @@
 		margin-bottom: 1em;
 		background-color: yellow;
     }
+
+    .wapo-subscribe-cta {
+		max-width: 500px;
+		margin: auto;
+		margin-bottom: 1em;
+		background-color: yellow;
+    }
   </style>
 	<script>
 			function handleReferrerDomain() {
@@ -810,11 +817,41 @@
           </style>
         </div>
         <blink>
-        <div class="pb-feature subscription-cta">
+        <div id="cta-newsletter-subscribe" class="pb-feature subscription-cta" style="display:none;">
         	<h2>Subscribe to our awesome newsletter</h2>
           <form class="subscribe-form" style="width: 100%;">
             <input type="text" class="subscribe-input" placeholder="Enter your email address"/>
             <input type="submit" value="Subscribe!" class="subscribe-submit"/>
+            <br>
+          </form>
+          <style>
+            .subscribe-input {
+              width: 100%; 
+              height: 34px;  
+              color: black;  
+              padding: 6px;  
+              outline-width: 0px; 
+              box-sizing: border-box;
+            }
+            .subscribe-submit {
+              width: 100%; 
+              height: 34px; 
+              color: white;
+              font-weight: bold;
+              padding: 8px; 
+              margin-top: 5px; 
+              background-color: #a2a2a2; 
+              border-width: 0px;  
+              border-radius: 3px; 
+              outline-width: 0px; 
+            }
+          </style>
+        </div>
+        <div id="cta-newspaper-subscribe" class="pb-feature wapo-subscribe-cta" style="display:none;">
+        	<h2>You seem to like us. Give us your money!</h2>
+          <form class="subscribe-form" style="width: 100%;">
+            <input type="text" class="subscribe-input" placeholder="Pay with a bitcoin ID and we'll send you dead trees, that's how this works right?"/>
+            <input type="submit" value="Subscribe now!" class="subscribe-submit"/>
             <br>
           </form>
           <style>
@@ -845,13 +882,13 @@
           <div class="next-story-wrapper">
             <div class="next-story has-bg-photo">
               <div class="kicker">Next Story</div>
-              <div class="heading heading2"><a href="http://www.washingtonpost.com/news/speaking-of-science/wp/2015/07/11/struggling-to-save-black-rhinos-scientists-are-crowdfunding-to-preserve-their-dna/">Struggling to save black rhinos, scientists are crowdfunding to preserve their DNA</a>
+              <div class="heading heading2"><a href="second.html">Struggling to save black rhinos, scientists are crowdfunding to preserve their DNA</a>
               </div>
               <div class="sigline"><span class="author">Robert Gebelhoff</span> &middot; <span class="date">8 hours ago</span>
               </div>
             </div>
             <!-- /next-story -->
-            <a href="http://www.washingtonpost.com/news/speaking-of-science/wp/2015/07/11/struggling-to-save-black-rhinos-scientists-are-crowdfunding-to-preserve-their-dna/"><span id="next-story-bg" class="next-story-bg" style="background:url('https://img.washingtonpost.com/blogs/wp-content/themes/wapo-blogs-v2/imrs.php?w=250&h=250&src=https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/07/Ntombi-R-Prehn.jpg') no-repeat center top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></span></a>
+            <a href="second.html"><span id="next-story-bg" class="next-story-bg" style="background:url('https://img.washingtonpost.com/blogs/wp-content/themes/wapo-blogs-v2/imrs.php?w=250&h=250&src=https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/07/Ntombi-R-Prehn.jpg') no-repeat center top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></span></a>
             <!-- /next-story-bg -->
           </div>
           <!-- /next-story-wrapper -->
@@ -930,15 +967,32 @@
         $(document).ready(function () {
           var visited = $.cookie('wapo');
           if (visited >= 1) {
-            console.log("I see you bro!");
+			document.getElementById("cta-newspaper-subscribe").style.display = "block";
           } else {
-            console.log("New visitor");
+			document.getElementById("cta-newsletter-subscribe").style.display = "block";
             visited = 1; // increase counter of visits
             // set new cookie value to match visits
             $.cookie('wapo', visited);
           }
         });
       </script>
+      	<script>
+			function handleReferrerDomain() {
+				var url = document.createElement('a');
+				url.href = document.referrer;
+				var m = $("meta[name=section]").attr("content"); 
+				if (document.referrer.indexOf('t.co') >= 0) {
+					document.getElementById("twittershare").style.display = "block";
+				} else if (document.referrer.indexOf('facebook.com') >= 0)  {
+					document.getElementById("facebookshare").style.display = "block";
+				} else if ( m == 'speaking-of-science' ) {
+					document.getElementById("emailshare").style.display = "block";
+				} else {
+					document.getElementById("facebookshare").style.display = "block";
+				}
+			}
+	</script>
+
       <script>
       /**
 		* blinktag.js v1.0.0 (2008-04-01)
