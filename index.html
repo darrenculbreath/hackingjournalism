@@ -55,6 +55,13 @@
       display: block;
       width: 100%;
     }
+
+    .subscription-cta {
+		max-width: 500px;
+		margin: auto;
+		margin-bottom: 1em;
+		background-color: yellow;
+    }
   </style>
 	<script>
 			function handleReferrerDomain() {
@@ -822,7 +829,8 @@
             }
           </style>
         </div>
-        <div class="pb-feature">
+        <blink>
+        <div class="pb-feature subscription-cta">
         	<h2>Subscribe to our awesome newsletter</h2>
           <form class="subscribe-form" style="width: 100%;">
             <input type="text" class="subscribe-input" placeholder="Enter your email address"/>
@@ -852,6 +860,7 @@
             }
           </style>
         </div>
+        </blink>
         <div class="moat-trackable pb-f-theme-normal pb-3 pb-feature pb-layout-item pb-f-article-next-story" moat-id="article/next-story|national/health-science" id="f1QWlH1enlfjhp">
           <div class="next-story-wrapper">
             <div class="next-story has-bg-photo">
@@ -876,12 +885,8 @@
             })(jQuery);
           </script>
         </div>
-
-        <div class="moat-trackable pb-f-theme-normal pb-3 pb-feature pb-layout-item pb-f-page-subscription" moat-id="page/subscription|national/health-science" id="fzMZnM1enlfjhp">
-
-
-        </div>
       </div>
+
       <script src="/pb/resources/js/jqModal.js?_=78619&_minify=false"></script>
       <script src="/pb/resources/js/jquery.ui.core.js?_=78619&_minify=false"></script>
       <script src="/pb/resources/js/inline-content.js?_=78619&_minify=false"></script>
@@ -954,6 +959,30 @@
           }
         });
       </script>
+      <script>
+      /**
+		* blinktag.js v1.0.0 (2008-04-01)
+		*
+		* Compatibility shim to implement the <blink> element in browsers that don't
+		* properly support the w3c spec (for spec details, see
+		* http://www.w3.org/Style/HTML40-plus-blink.dtd).
+		*
+		* For a demo and usage examples, see
+		* http://wonko.com/post/blink_tag_compatibility_script
+		*
+		* Copyright (c) 2008 by Ryan Grove <ryan@wonko.com>.
+		* All rights reserved.
+		*/
+
+		setInterval(function () {
+		var i, s, tags = document.getElementsByTagName('blink');
+
+		for (i = 0; i < tags.length; ++i) {
+		s = tags[i].style;
+		s.visibility = s.visibility == 'hidden' ? 'visible' : 'hidden';
+		}
+		}, 1000);
+		</script>
 </body>
 
 </html>
