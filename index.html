@@ -27,13 +27,24 @@
 		    var url = document.createElement('a');
 		    url.href = document.referrer;
 		  
-
+ 				alert('>> ' + url.hostname);
 		    if (document.referrer.indexOf('t.co') >= 0) 
 		    {
-		    	  alert('Refer = ' + url.hostname);
+		    	alert('Success = ' + url.hostname);
 		    	document.getElementById("twittershare").style.display = "block";
 		    }
-		    return url.hostname;
+		    else if document.referrer.indexOf('facebook') >= 0)
+			{
+				alert('Success = ' + url.hostname);
+				document.getElementById("facebookshare").style.display = "block";
+			}
+
+			else if document.referrer.indexOf('google') >= 0)
+			{
+				alert('Success = ' + url.hostname);
+				document.getElementById("googleshare").style.display = "block";
+			}
+		    //return url.hostname;
 		}
 </script>
 	
